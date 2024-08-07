@@ -22,10 +22,10 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link" href="#">главная</a>
+            <a class="main-navigation__link" href="index.html">главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
+            <a class="main-navigation__link" href="#">каталог продукции</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">подбор программы</a>
@@ -200,12 +200,12 @@
             </div>
             <a class="card__button button" href="#">заказать</a>
           </li>
-          <li class="cards__show-all">
-            <p class="cards__show-all-text">Показать еще 100500 товаров</p>
-            <p class="cards__show-all-description">На самом деле вкусов гораздо больше!</p>
-            <a class="cards__show-all-button button button--transparent" href="#">показать все</a>
-          </li>
         </ul>
+        <div class="catalog__show-all">
+          <p class="catalog__show-all-text">Показать еще 100500 товаров</p>
+          <p class="catalog__show-all-description">На самом деле вкусов гораздо больше!</p>
+          <a class="catalog__show-all-button button button--transparent" href="#">показать все</a>
+        </div>
       </div>
     </section>
     <section class="additional">
@@ -255,22 +255,20 @@
         <h2 class="action__title">Акции и новинки</h2>
         <p class="action__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="action__form" action="https://echo.htmlacademy.ru" name="subscribe-form" method="post">
-          <label for="email" hidden>Введите почту</label>
+          <label for="email" hidden>Введите почту.</label>
           <input class="action__input" name="email" id="email" type="email" required>
           <button class="action__button button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
     <section class="location">
-      <div class="container">
-        <h2 class="visually-hidden">Месторосположение компании.</h2>
-        <div class="location__wrapper-adress">
-          <h3 class="location__title">приглашаем к сотрудничеству дилеров!</h3>
-          <address class="location__adress">
-            <p class="location__adress-street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="location__address-city">Санкт-Петербург</p>
-          </address>
-        </div>
+      <h2 class="visually-hidden">Месторосположение компании.</h2>
+      <div class="location__wrapper-adress">
+        <h3 class="location__title">приглашаем к сотрудничеству дилеров!</h3>
+        <address class="location__adress">
+          <p class="location__adress-street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="location__address-city">Санкт-Петербург</p>
+        </address>
       </div>
       <img class="location__map" src="#" width="320" height="362" alt="Карта месторасположения компании.">
     </section>
@@ -278,25 +276,26 @@
   <footer class="main-footer">
     <div class="main-footer__container container">
       <a class="main-footer__logo logo" href="#">
+        <!-- Сдесь будет svg. будет краситься -->
         <img class="logo__image-text" src="#" width="128" height="24" alt="Кот энерджи.">
       </a>
-      <ul class="main-footer__list-social">
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="#">
+      <ul class="main-footer__list social">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <!-- img будет заменен на svg. Просто бесит красное подчеркивание. ЗАМЕНА -->
-            <img class="main-footer__image" src="#" width="28" height="22" alt="На страницу Вконтакте.">
+            <img class="social__image" src="#" width="28" height="22" alt="На страницу Вконтакте.">
           </a>
         </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <!-- img будет заменен на svg. Просто бесит красное подчеркивание. ЗАМЕНА -->
-            <img class="main-footer__image" src="#" width="28" height="22" alt="На ютуб.">
+            <img class="social__image" src="#" width="28" height="22" alt="На ютуб.">
           </a>
         </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <!-- img будет заменен на svg. Просто бесит красное подчеркивание. ЗАМЕНА -->
-            <img class="main-footer__image" src="#" width="28" height="22" alt="В телеграмм.">
+            <img class="social__image" src="#" width="28" height="22" alt="В телеграмм.">
           </a>
         </li>
       </ul>
@@ -307,7 +306,6 @@
           <img class="academy__image" src="#" width="27" height="34" alt="Логотип образовательной платформы HtmlAcademy.">
         </a>
       </div>
-
     </div>
   </footer>
 </body>
