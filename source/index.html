@@ -13,8 +13,10 @@
   <header class="main-header">
     <div class="main-header__container container">
       <a class="main-header__logo logo" href="#">
-        <img class="main-header__logo-image logo__image" src="#" width="33" height="38" alt="Логотип. Довольный кот с красной маской бэтмена.">
-        <img class="main-header__logo-image-text logo__image-text" src="#" width="101" height="18" alt="Кот энерджи.">
+        <img class="logo__image logo__image--image" src="#" width="33" height="38" alt="Логотип. Довольный кот с красной маской бэтмена.">
+      </a>
+      <a class="main-header__logo logo" href="#">
+        <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Кот энерджи.">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toogle" type="button">
@@ -38,7 +40,11 @@
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="#" width="280" height="270" alt="Питание для котов Cat pro Energy со вкусом курицы.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/hero-product-desktop@1x.png 1x, images/hero-product-desktop@2x.png 2x" type="image/png" width="552" height="499">
+        <source media="(min-width: 768px)" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png" width="709" height="609">
+        <img class="hero__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов Cat pro Energy со вкусом курицы.">
+      </picture>
       <a class="hero__button button" href="#">подобрать программу</a>
     </section>
     <section class="program">
@@ -95,8 +101,14 @@
         </div>
       </dl>
       <div class="example__slider slider">
-        <img class="slider__image" src="#" width="280" height="256" alt="Толстый котик.">
-        <img class="slider__image" src="#" width="280" height="256" alt="Худой котик.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый котик.">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.png 1x, images/slider-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный котик.">
+        </picture>
         <div class="slider__curtain">
           <button class="slider__button" type="button">
             <span class="visually-hidden">Сдвинуть в лево.</span>
@@ -116,7 +128,11 @@
           <p class="location__address-city">Санкт-Петербург</p>
         </address>
       </div>
-      <img class="location__map" src="#" width="320" height="362" alt="Карта месторасположения компании.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/maps-desktope@1x.png 1x, images/maps-desktope@2x.png 2x" type="image/png" width="1440" height="400">
+        <source media="(min-width: 768px)" srcset="images/maps-tablet@1x.png 1x, images/maps-tablet@2x.png 2x" type="image/png" width="768" height="400">
+        <img class="location__map" src="images/maps-mobile@1x.png" srcset="images/maps-mobile@2x.png 2x" width="320" height="362" alt="Карта месторасположения компании.">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
