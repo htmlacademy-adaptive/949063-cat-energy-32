@@ -3,29 +3,29 @@
 @import "./common/global.scss";
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
-// @import "./common/container.scss";
-// @import "./common/visually-hidden.scss";
+@import "./common/container.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
 /* INDEX */
 /* BUTTON-MAIN */
 @import "./blocks/button.scss";
 /* SLIDER */
-// @import "./blocks/slider.scss";
+@import "./blocks/slider.scss";
 /* ADRESS */
 @import "./blocks/adress.scss";
 /* SOCIAL */
-// @import "./blocks/social.scss";
+@import "./blocks/social.scss";
 /* ACADEMY */
 @import "./blocks/academy.scss";
 /* MAIN-PAGE */
-// @import "./blocks/page.scss";
+@import "./blocks/page.scss";
 /* HEADER */
-// @import "./blocks/main-header.scss";
-// @import "./blocks/logo.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/main-navigation.scss";
 /* MAIN */
-// @import "./blocks/main-container.scss";
+@import "./blocks/main-container.scss";
 /* HERO */
 @import "./blocks/hero.scss";
 /* PROGRAM */
@@ -41,7 +41,7 @@
 /* CATALOG */
 @import "./blocks/catalog.scss";
 /* CARDS */
-// @import "./blocks/cards.scss";
+@import "./blocks/cards.scss";
 /* CARD */
 @import "./blocks/card.scss";
 /* ADDITIONAL */
