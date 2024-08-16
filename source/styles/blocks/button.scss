@@ -1,0 +1,14 @@
+.button {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-color-default;
+  background-color: $bg-color-basic-green;
+  border: none;
+
+  &--transparent {
+    background-color: $bg-color-basic-grey;
+    color: $text-color-second;
+  }
+}

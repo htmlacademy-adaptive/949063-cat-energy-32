@@ -1,0 +1,15 @@
+.hero {
+  font-family: $second-font;
+  background-color: $bg-color-basic-green;
+  color: $text-color-default;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.hero__slogan {
+  line-height: 14px;
+}
