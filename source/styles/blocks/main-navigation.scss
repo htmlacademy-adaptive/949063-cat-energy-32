@@ -1,7 +1,5 @@
 .main-navigation__link {
-  font-family: $second-font;
-  font-size: 20px;
-  line-height: 20px;
+  @include text-typography ($font-size: 20px);
   text-transform: uppercase;
   color: $text-color-second;
 }

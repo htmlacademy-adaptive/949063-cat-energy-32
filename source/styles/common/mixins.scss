@@ -1,4 +1,4 @@
-@mixin font-face($font-family, $font-src, $font-weight, $font-style) {
+@mixin font-face ($font-family, $font-src, $font-weight, $font-style) {
   @font-face {
     font-family: $font-family;
     src: $font-src;
@@ -6,4 +6,22 @@
     font-style: $font-style;
     font-display: swap;
   }
+}
+
+@mixin title-typography ($font-weight: 400, $font-size: 24px, $line-height: 36px) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text-typography ($font-size: 16px, $line-height: 20px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin abs-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }

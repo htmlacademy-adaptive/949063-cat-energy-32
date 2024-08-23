@@ -1,8 +1,7 @@
-.location__title {
+.location__text {
+  @include text-typography ();
   font-family: $second-font;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  text-transform: uppercase;
   color: #111111;
 }
 

@@ -1,9 +1,24 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  @include text-typography ($font-size: 14px, $line-height: 18px);
   font-family: $basic-font;
   margin: 0;
-  font-size: 14px;
-  line-height: 18px;
   color: $text-color-basic;
   background-color: $bg-color-default;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
 }

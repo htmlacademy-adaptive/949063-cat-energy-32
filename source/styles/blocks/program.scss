@@ -2,17 +2,52 @@
   background-color: $bg-color-basic-grey;
 }
 
+.program__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $bg-color-basic-green;
+
+  &::after {
+    @include abs-position;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--thin::after {
+    width: 36px;
+    height: 50px;
+    background-image: url("../../icons/stack.svg#cat-thin");
+  }
+
+  &--strong::after {
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#cat-strong");
+  }
+}
+
 .program__title {
+  @include title-typography ($line-height: 37px);
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
+  text-transform: uppercase;
   color: $text-color-second;
 }
 
 .program__link {
+  @include text-typography ($line-height: 16px);
   font-family: $second-font;
-  font-size: 16px;
-  line-height: 16px;
+  text-transform: uppercase;
   color: $text-color-second;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-color: currentColor;
+  }
 }

@@ -1,15 +1,14 @@
-.action__title {
+.action {
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+}
+
+.action__title {
+  @include title-typography ($line-height: 24px);
   color: $text-color-second;
 }
 
 .action__text {
-  font-family: $second-font;
-  font-size: 16px;
-  line-height: 24px;
+  @include text-typography ($line-height: 24px);
   color: $text-color-second;
 }
 
@@ -24,6 +23,5 @@
 }
 
 .action__button {
-  font-size: 20px;
-  line-height: 26px;
+  @include text-typography ($font-size: 20px, $line-height: 26px);
 }

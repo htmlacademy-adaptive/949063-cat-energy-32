@@ -1,19 +1,16 @@
 .catalog__title {
+  @include title-typography ($font-size: 36px);
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   color: $text-color-second;
 }
 
 .catalog__show-all-text {
+  @include text-typography ();
   font-family: $second-font;
-  font-size: 16px;
-  line-height: 20px;
+  text-transform: uppercase;
   color: #111111;
 }
 
 .catalog__show-all-description {
-  font-size: 12px;
-  line-height: 16px;
+  @include text-typography ($font-size: 12px, $line-height: 16px);
 }

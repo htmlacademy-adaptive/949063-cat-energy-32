@@ -1,7 +1,6 @@
 .button {
+  @include text-typography;
   font-family: $second-font;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: $text-color-default;
   background-color: $bg-color-basic-green;

@@ -1,12 +1,10 @@
 .card__title {
+  @include title-typography ($font-size: 16px, $line-height: 20px);
   font-family: $second-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  text-transform: uppercase;
   color: $text-color-dark-grey;
 }
 
 .card__list-wrapper-text {
-  font-size: 12px;
-  line-height: 16px;
+  @include text-typography ($font-size: 12px, $line-height: 16px);
 }

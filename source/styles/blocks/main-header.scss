@@ -1,3 +1,15 @@
 .main-header {
+  font-family: $second-font;
+  padding-top: 13px;
   margin: 0;
+}
+
+.main-header__wrapper-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 56px;
+}
+
+.main-header__burger {
+  margin-left: auto;
 }

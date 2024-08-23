@@ -1,7 +1,7 @@
 /* здесь используйте глобальные переменные */
 /* font-family */
-$basic-font: "Lato", sans-serif;
-$second-font: "Oswald", sans-serif;
+$basic-font: "Lato", "Arial", sans-serif;
+$second-font: "Oswald", "Arial", sans-serif;
 
 /* text colors */
 $text-color-default: #ffffff;
@@ -16,5 +16,7 @@ $button-bg-basic-grey: #f2f2f2;
 /* background colors */
 $bg-color-default: #ffffff;
 $bg-color-second: #000000;
+$bg-color-special: #666666;
 $bg-color-basic-grey: #f2f2f2;
 $bg-color-basic-green: #68b738;
+$bg-color-basic-green-second: rgba(104, 183, 56, 0.85);

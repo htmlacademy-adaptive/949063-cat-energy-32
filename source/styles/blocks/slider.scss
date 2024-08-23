@@ -1,3 +1,41 @@
 .slider {
-  margin: 0;
+  position: relative;
+  height: 256px;
+
+  &::before {
+    @include abs-position;
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: $bg-color-special;
+    border-radius: 2px;
+  }
+}
+
+.slider__button {
+  @include abs-position;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $bg-color-special;
+  border-radius: 50%;
+  background-color: $bg-color-default;
+  color: $bg-color-special;
+
+  &::before {
+    @include abs-position;
+    content: "";
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#slider-arrow");
+    background-color: currentColor;
+  }
+
+  &:hover {
+    color: $bg-color-basic-green;
+    border: 2px solid $bg-color-basic-green;
+  }
+}
+
+.slider:has(.slider__button:hover)::before {
+  background-color: $bg-color-basic-green;
 }
