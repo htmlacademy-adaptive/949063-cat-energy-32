@@ -1,5 +1,19 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+  }
+}
+
 .academy__link-text {
   font-size: 16px;
   line-height: 20px;
   color: $text-color-basic;
+}
+
+.academy__link-logo {
+  height: 34px;
 }

@@ -1,13 +1,22 @@
-.main-header {
-  font-family: $second-font;
-  padding-top: 13px;
-  margin: 0;
-}
-
-.main-header__wrapper-logo {
+.main-header__container {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 56px;
+  font-family: $second-font;
+  padding: 13px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 94px;
+    padding: 25px 34px 65px 30px;
+  }
+
+  @media (min-width: $desktope-width) {
+    padding: 55px 110px 0;
+    margin-bottom: 74px;
+  }
 }
 
 .main-header__burger {

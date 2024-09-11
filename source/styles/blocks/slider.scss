@@ -1,19 +1,43 @@
 .slider {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   height: 256px;
+  width: 280px;
+  margin: 0 auto;
 
   &::before {
     @include abs-position;
     content: "";
+    z-index: 2;
     width: 4px;
     height: 100%;
     background-color: $bg-color-special;
     border-radius: 2px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.example__image-wrapper {
+  overflow: hidden;
+}
+
+.slider__image {
+  position: relative;
+  max-width: none;
+
+  &--shift {
+    right: 100%;
+  }
 }
 
 .slider__button {
   @include abs-position;
+  z-index: 2;
   width: 40px;
   height: 40px;
   border: 2px solid $bg-color-special;

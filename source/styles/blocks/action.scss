@@ -1,18 +1,66 @@
 .action {
+  padding: 40px 0;
   font-family: $second-font;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $desktope-width) {
+    padding: 96px 0 104px;
+  }
 }
 
 .action__title {
   @include title-typography ($line-height: 24px);
+  margin: 0 0 32px;
   color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    @include title-typography ($font-size: 32px, $line-height: 32px);
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: $desktope-width) {
+    @include title-typography ($font-size: 40px, $line-height: 40px);
+    margin: 0 0 72px;
+  }
 }
 
 .action__text {
   @include text-typography ($line-height: 24px);
+  margin: 0 0 24px;
+  text-align: center;
   color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    @include text-typography ($font-size: 24, $line-height: 32px);
+    padding-inline: 38px;
+  }
+}
+
+.action__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-inline: 38px;
+  }
+
+  @media (min-width: $desktope-width) {
+    width: 752px;
+    padding: 0;
+    margin-inline: auto;
+  }
 }
 
 .action__input {
+  width: 100%;
+  min-height: 56px;
+  padding: 12px;
+  border: 1px solid #cdcdcd;
   font-family: $second-font;
   font-size: 20px;
   text-transform: uppercase;
@@ -24,4 +72,10 @@
 
 .action__button {
   @include text-typography ($font-size: 20px, $line-height: 26px);
+  width: 100%;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
 }

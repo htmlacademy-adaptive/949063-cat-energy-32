@@ -1,5 +1,90 @@
+.main-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  min-height: 198px;
+  background-color: $bg-color-default;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    min-height: 0;
+  }
+
+  @media (min-width: $desktope-width) {
+    background-color: transparent;
+  }
+}
+
+.main-navigation__list {
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 33px;
+  }
+}
+
+.main-navigation__item {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .main-navigation__link {
   @include text-typography ($font-size: 20px);
+  padding: 20px 0 24px;
   text-transform: uppercase;
   color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktope-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+  }
+}
+
+.main-navigation__link--current {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    translate: -50%;
+    width: 100%;
+    height: 2px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $bg-color-basic-green;
+    }
+  }
+}
+
+.main-navigation__link--current-swap-color {
+  &::after {
+    @media (min-width: $desktope-width) {
+      background-color: currentColor;
+    }
+  }
+}
+
+.main-navigation__link--swap-color {
+  @media (min-width: $desktope-width) {
+    color: $text-color-default;
+  }
 }

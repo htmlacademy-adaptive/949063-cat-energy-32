@@ -1,3 +1,6 @@
 .social {
-  margin: 0;
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
 }

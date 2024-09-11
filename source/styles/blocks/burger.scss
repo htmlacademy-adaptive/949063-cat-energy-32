@@ -36,4 +36,8 @@
     top: 8px;
     transform: rotate(-45deg);
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

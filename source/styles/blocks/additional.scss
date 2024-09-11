@@ -1,23 +1,124 @@
+.additional__container {
+  @media (min-width: $desktope-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 79px;
+  }
+}
+
 .additional__title {
   @include title-typography ($line-height: 24px);
   font-family: $second-font;
+  margin: 24px 0 36px;
   color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    @include title-typography ($font-size: 32px, $line-height: 32px);
+    margin: 0 0 80px;
+  }
+
+  @media (min-width: $desktope-width) {
+    @include title-typography ($font-size: 40px, $line-height: 40px);
+    width: 100%;
+    margin: 0 0 76px;
+  }
+}
+
+.additional__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding-top: 13px;
+  margin-bottom: 33px;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 0;
+    padding: 0;
+    margin-bottom: 68px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktope-width) {
+    min-width: 896px;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.additional__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px 30px;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktope-width) {
+    gap: 0;
+    padding: 15px 0;
+  }
 }
 
 .additional__item-title {
   @include title-typography ($font-size: 16px, $line-height: 16px);
   font-family: $second-font;
+  margin: 0 0 13px;
   text-transform: uppercase;
   color: $text-color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include text-typography ($font-size: 20px);
+    min-width: 161px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktope-width) {
+    min-width: 170px;
+  }
+}
+
+.additional__item-wrapper-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+    min-width: 250px;
+    column-gap: 54px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktope-width) {
+    justify-content: space-between;
+    width: 285px;
+  }
 }
 
 .additional__item-text {
   @include text-typography ($font-size: 14px, $line-height: 14px);
+
+  @media (min-width: $tablet-width) {
+    @include text-typography ($font-size: 16px, $line-height: 20px);
+  }
 }
 
 .additional__footer {
   position: relative;
-  z-index: -1;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-image: url("../../images/additional-footer-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +129,18 @@
     display: block;
     width: 78px;
     height: 80px;
+    margin: 58px 0 49px;
     background-image: url("../../icons/stack.svg#present");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 83px;
+      margin: 0 0 0 78px;
+    }
+
+    @media (min-width: $desktope-width) {
+      margin: 56px 0 46px;
+    }
   }
 
   &::after {
@@ -41,9 +153,50 @@
     height: 100%;
     background-color: $bg-color-basic-green-second;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 264px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: 100% -323px;
+  }
+
+  @media (min-width: $desktope-width) {
+    flex-direction: column;
+    gap: 0;
+    min-width: 245px;
+    max-height: 288px;
+    background-position: center center;
+  }
 }
 
 .additional__footer-text {
   @include text-typography ();
+  max-width: 184px;
+  margin: 0;
   color: $text-color-default;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktope-width) {
+    text-align: center;
+  }
+}
+
+.additional__item-button {
+  align-self: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktope-width) {
+    max-width: 244px;
+    margin: 0 0 0 40px;
+  }
 }

@@ -1,3 +1,9 @@
 .logo {
-  margin: 0;
+  flex-shrink: 0;
+
+  &--text {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
