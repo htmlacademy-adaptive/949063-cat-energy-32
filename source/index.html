@@ -26,10 +26,10 @@
       <a class="main-header__logo logo logo--text" href="#">
         <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Кот энерджи.">
       </a>
-      <button class="main-header__burger burger" type="button">
+      <button class="main-header__burger burger burger--closed" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--nojs">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--current main-navigation__link--current-swap-color main-navigation__link--swap-color" href="#">главная</a>
@@ -187,12 +187,6 @@
       </div>
     </div>
   </footer>
-  <script>
-    const burgerActive = document.querySelector('.burger');
-    burgerActive.onclick = function () {
-      burgerActive.classList.toggle('burger--active');
-    };
-  </script>
 </body>
 
 </html>

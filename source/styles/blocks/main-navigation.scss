@@ -8,6 +8,11 @@
   min-height: 198px;
   background-color: $bg-color-default;
 
+  &--nojs {
+    position: relative;
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: block;

@@ -121,7 +121,9 @@
 }
 
 .hero__picture {
-  position: relative;
+  @media (min-width: $desktope-width) {
+    position: relative;
+  }
 }
 
 .hero__image {
