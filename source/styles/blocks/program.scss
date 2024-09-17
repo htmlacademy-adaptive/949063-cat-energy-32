@@ -61,15 +61,36 @@
   }
 
   &--thin::before {
+    top: 43%;
     width: 36px;
     height: 50px;
     background-image: url("../../icons/stack.svg#cat-thin");
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktope-width) {
+      width: 70px;
+      height: 97px;
+    }
   }
 
   &--strong::before {
     width: 67px;
     height: 28px;
     background-image: url("../../icons/stack.svg#cat-strong");
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktope-width) {
+      width: 134px;
+      height: 56px;
+    }
   }
 
   @media (min-width: $tablet-width) {
