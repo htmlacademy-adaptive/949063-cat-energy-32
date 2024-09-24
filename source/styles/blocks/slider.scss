@@ -44,6 +44,7 @@
   border-radius: 50%;
   background-color: $bg-color-default;
   color: $bg-color-special;
+  cursor: pointer;
 
   &::before {
     @include abs-position;
@@ -58,8 +59,18 @@
     color: $bg-color-basic-green;
     border: 2px solid $bg-color-basic-green;
   }
+
+  &:active {
+    color: $bg-color-basic-green-2;
+    border-color: $bg-color-basic-green-2;
+  }
 }
 
 .slider:has(.slider__button:hover)::before {
   background-color: $bg-color-basic-green;
+}
+
+.slider:has(.slider__button:active)::before {
+  background-color: $bg-color-basic-green-2;
+  opacity: 0.6;
 }

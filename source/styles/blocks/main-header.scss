@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 56px;
   font-family: $second-font;
   padding: 13px 20px 14px;
@@ -25,5 +26,5 @@
 }
 
 .main-header__burger {
-  margin-left: auto;
+  margin-left: 10px;
 }

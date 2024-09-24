@@ -7,7 +7,6 @@
   width: 24px;
   height: 18px;
 
-
   &::before,
   &::after {
     content: "";
@@ -18,13 +17,19 @@
     background-color: $bg-color-second;
   }
 
+  &:disabled {
+    opacity: 0.1;
+  }
+
   &--closed::before {
     top: 0;
     box-shadow: 0 8px $bg-color-second;
+    transition: top 0.4s 0.1s;
   }
 
   &--closed::after {
     bottom: 0;
+    transition: bottom 0.4s 0.1s;
   }
 
   &--opened::before {
@@ -32,12 +37,14 @@
     width: 25px;
     transform: rotate(45deg);
     box-shadow: 0 0 $bg-color-default;
+    transition: box-shadow 0.4s, transform 0.4s 0.1s;
   }
 
   &--opened::after {
     top: 8px;
     width: 25px;
     transform: rotate(-45deg);
+    transition: transform 0.4s 0.1s;
   }
 
   @media (min-width: $tablet-width) {

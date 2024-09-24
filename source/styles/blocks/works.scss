@@ -16,7 +16,7 @@
 
 .works__title {
   @include title-typography ($font-size: 36px, $line-height: 40px);
-  margin: 0 0 38px;
+  margin: 0 0 40px;
   font-family: $second-font;
   color: $text-color-second;
 

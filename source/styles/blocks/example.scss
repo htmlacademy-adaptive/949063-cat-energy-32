@@ -26,7 +26,7 @@
   @media (min-width: $desktope-width) {
     position: relative;
     min-height: 598px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 .example__text {
-  margin: 0 0 20px;
+  margin: 0 0 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -70,7 +70,7 @@
 .example__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 34px 31px;
+  gap: 20px 31px;
   width: 280px;
   margin: 0 auto 20px;
 
@@ -78,23 +78,21 @@
     grid-template-columns: repeat(2, 162px) 1fr;
     gap: 43px;
     width: 100%;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktope-width) {
     grid-template-columns: repeat(2, 162px);
-    row-gap: 60px;
+    row-gap: 57px;
     margin: 0;
   }
 }
 
 .example__item {
-  @include flex-center;
-  position: relative;
-  max-width: 124px;
-  min-height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -105,9 +103,16 @@
 .example__name {
   @include text-typography ($font-size: 24px, $line-height: 24px);
   font-family: $second-font;
+  min-width: 124px;
+  min-height: 56px;
+  padding: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
   color: $text-color-basic;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 72px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -115,12 +120,9 @@
 
 .example__description {
   @include text-typography ($font-size: 12px, $line-height: 12px);
-  position: absolute;
-  top: 88%;
-  left: 50%;
-  translate: -50%;
-  min-width: 81px;
-  margin: 0;
+  position: relative;
+  max-width: 81px;
+  margin: -10px 0 0;
   background-color: #eaeaea;
   text-align: center;
 
@@ -147,7 +149,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    row-gap: 9px;
+    row-gap: 10px;
   }
 
   @media (min-width: $desktope-width) {

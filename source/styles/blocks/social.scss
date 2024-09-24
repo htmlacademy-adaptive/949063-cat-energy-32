@@ -2,5 +2,20 @@
   @include reset-list;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   column-gap: 24px;
+}
+
+.social__link {
+  color: #666666;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $bg-color-basic-green;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
 }

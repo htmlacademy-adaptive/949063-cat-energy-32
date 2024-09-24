@@ -9,18 +9,18 @@
 .additional__title {
   @include title-typography ($line-height: 24px);
   font-family: $second-font;
-  margin: 0 0 34px;
+  margin: 0 0 36px;
   color: $text-color-second;
 
   @media (min-width: $tablet-width) {
     @include title-typography ($font-size: 32px, $line-height: 32px);
-    margin: 0 0 80px;
+    margin: 0 0 81px;
   }
 
   @media (min-width: $desktope-width) {
     @include title-typography ($font-size: 40px, $line-height: 40px);
     width: 100%;
-    margin: 0 0 76px;
+    margin: 0 0 81px;
   }
 }
 
@@ -28,7 +28,7 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktope-width) {
-    min-width: 896px;
+    max-width: 896px;
     margin: 0;
     border: none;
   }
@@ -48,7 +48,7 @@
 .additional__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 13px 0 18px;
+  padding: 14px 0 17px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -58,11 +58,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr) minmax(70px, auto);
     gap: 25px 24px;
-    padding: 26px 37px 28px;
+    padding: 26px 37px 27px;
   }
 
   @media (min-width: $desktope-width) {
-    grid-template-columns: 286px 1fr minmax(45px, auto) max-content;
+    grid-template-columns: 286px minmax(204px, min-content) minmax(45px, auto) max-content;
     align-items: center;
     gap: 0 39px;
     padding: 15px 0 16px;
@@ -216,7 +216,7 @@
 
 .additional__item-button {
   grid-column: 1 / -1;
-  margin-top: 15px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

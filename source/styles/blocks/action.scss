@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktope-width) {
-    padding: 96px 0 104px;
+    padding: 94px 0 104px;
   }
 }
 
@@ -57,6 +57,8 @@
 }
 
 .action__input {
+  position: relative;
+  z-index: 2;
   width: 100%;
   min-height: 56px;
   padding: 12px;
@@ -64,6 +66,19 @@
   font-family: $second-font;
   font-size: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color-basic;
+  }
+
+  &:disabled {
+    outline: 2px solid #ff8282;
+  }
 
   &::placeholder {
     color: $text-color-basic;

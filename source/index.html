@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon-32x32.svg" type="image/svg+xml">
@@ -16,14 +18,14 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo logo--image" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="202" height="59">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
           <img class="logo__image logo__image--image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип. Довольный кот с красной маской бэтмена.">
         </picture>
       </a>
-      <a class="main-header__logo logo logo--text" href="#">
+      <a class="main-header__logo logo logo--text" href="index.html">
         <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Кот энерджи.">
       </a>
       <button class="main-header__burger burger burger--closed" type="button">
@@ -151,9 +153,9 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__container container">
-      <a class="main-footer__logo logo" href="#">
+      <a class="main-footer__logo" href="index.html">
         <span class="visually-hidden">На главную страницу, кот энерджи.</span>
-        <svg class="logo__text" width="128" height="24">
+        <svg width="128" height="24">
           <use href="icons/stack.svg#logo-text"></use>
         </svg>
       </a>
@@ -161,7 +163,7 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">На страницу Вконтакте.</span>
-            <svg class="red" width="28" height="22">
+            <svg width="28" height="22">
               <use href="icons/stack.svg#social-vk"></use>
             </svg>
           </a>
@@ -169,7 +171,7 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">На ютуб.</span>
-            <svg class="red" width="28" height="22">
+            <svg width="28" height="22">
               <use href="icons/stack.svg#social-youtube"></use>
             </svg>
           </a>
@@ -177,17 +179,16 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">В телеграмм.</span>
-            <svg class="red" width="28" height="22">
+            <svg width="28" height="22">
               <use href="icons/stack.svg#social-telegram"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__wrapper-academy academy">
-        <a class="academy__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="academy__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип образовательной платформы HtmlAcademy.</span>
-          <svg class="red" width="27" height="34">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="academy__link-text">HTML Academy</span>
+          <svg class="academy__link-logo" width="27" height="34">
             <use href="icons/stack.svg#html-academy"></use>
           </svg>
         </a>

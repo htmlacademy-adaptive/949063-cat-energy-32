@@ -1,6 +1,18 @@
 .logo {
   flex-shrink: 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--image {
+    align-self: flex-start;
+  }
+
   &--text {
     @media (min-width: $tablet-width) {
       display: none;
