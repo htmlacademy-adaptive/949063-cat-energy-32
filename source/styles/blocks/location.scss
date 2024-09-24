@@ -68,9 +68,35 @@
   display: block;
   width: 100vw;
   min-height: 362px;
+  background-repeat: no-repeat;
+  background-image:
+    image-set(
+      url("../../images/maps-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/maps-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/maps-mobile@2x.png") 2x,
+      url("../../images/maps-mobile@1x.png") 1x
+    );
+  background-position: center center;
   border: none;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    background-image:
+      image-set(
+        url("../../images/maps-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/maps-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/maps-tablet@2x.png") 2x,
+        url("../../images/maps-tablet@1x.png") 1x
+      );
+  }
+
+  @media (min-width: $desktope-width) {
+    background-image:
+      image-set(
+        url("../../images/maps-desktope@2x.webp") type("image/webp") 2x,
+        url("../../images/maps-desktope@1x.webp") type("image/webp") 1x,
+        url("../../images/maps-desktope@2x.png") 2x,
+        url("../../images/maps-desktope@1x.png") 1x
+      );
   }
 }
