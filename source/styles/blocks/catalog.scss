@@ -1,0 +1,41 @@
+.catalog {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: $desktope-width) {
+    max-width: 1440px;
+    padding-inline: 110px;
+    margin: 0 auto 70px;
+  }
+}
+
+.catalog__title {
+  @include title-typography ($font-size: 36px);
+  margin: 0;
+  padding: 27px 20px 41px;
+  border-top: 1px solid #d9d9d9;
+  font-family: $second-font;
+  color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    @include title-typography ($font-size: 60px, $line-height: 60px);
+    padding: 0;
+    margin-bottom: 165px;
+    border: none;
+  }
+}
+
+.catalog__show-all-text {
+  @include text-typography ();
+  font-family: $second-font;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog__show-all-description {
+  @include text-typography ($font-size: 12px, $line-height: 16px);
+}

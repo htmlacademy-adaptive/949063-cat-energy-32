@@ -1,0 +1,109 @@
+.main-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  min-height: 198px;
+  background-color: $bg-color-default;
+
+  &--nojs {
+    position: relative;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    min-height: 0;
+    max-width: 436px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktope-width) {
+    max-width: 477px;
+    background-color: transparent;
+  }
+}
+
+.main-navigation__list {
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 33px;
+  }
+}
+
+.main-navigation__item {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-navigation__link {
+  @include text-typography ($font-size: 20px);
+  padding: 20px 0 24px;
+  text-transform: uppercase;
+  color: $text-color-second;
+
+  &:hover:not(.main-navigation__link--current) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.main-navigation__link--current) {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktope-width) {
+    padding: 9px 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+  }
+}
+
+.main-navigation__link--current {
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 100%;
+    height: 2px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $bg-color-basic-green;
+    }
+  }
+}
+
+.main-navigation__link--current-swap-color {
+  &::after {
+    @media (min-width: $desktope-width) {
+      background-color: currentColor;
+    }
+  }
+}
+
+.main-navigation__link--swap-color {
+  @media (min-width: $desktope-width) {
+    color: $text-color-default;
+  }
+}

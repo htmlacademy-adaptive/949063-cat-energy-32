@@ -1,7 +1,54 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/container.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+/* INDEX */
+/* BUTTON-MAIN */
+@import "./blocks/button.scss";
+/* SLIDER */
+@import "./blocks/slider.scss";
+/* SOCIAL */
+@import "./blocks/social.scss";
+/* ACADEMY */
+@import "./blocks/academy.scss";
+/* MAIN-PAGE */
+@import "./blocks/page.scss";
+/* HEADER */
+@import "./blocks/main-header.scss";
+/* LOGO */
+@import "./blocks/logo.scss";
+/* BURGER */
+@import "./blocks/burger.scss";
+/* MAIN-NAVIGATION */
+@import "./blocks/main-navigation.scss";
+/* MAIN */
+@import "./blocks/main-container.scss";
+/* HERO */
+@import "./blocks/hero.scss";
+/* PROGRAM */
+@import "./blocks/program.scss";
+/* WORKS */
+@import "./blocks/works.scss";
+/* EXAMPLE */
+@import "./blocks/example.scss";
+/* LOCATION */
+@import "./blocks/location.scss";
+/* MAIN-FOOTER */
+@import "./blocks/main-footer.scss";
+/* CATALOG */
+@import "./blocks/catalog.scss";
+/* CARDS */
+@import "./blocks/cards.scss";
+/* CARD */
+@import "./blocks/card.scss";
+/* ADDITIONAL */
+@import "./blocks/additional.scss";
+/* ACTION */
+@import "./blocks/action.scss";
+/* Before and after title-line */
+@import "./blocks/title-line.scss";

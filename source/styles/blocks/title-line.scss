@@ -1,0 +1,35 @@
+.main-container {
+  overflow-x: clip;
+}
+
+.title-line {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+
+  &::after {
+    content: "";
+    position: relative;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 2px;
+    margin-right: -100vw;
+    background-color: $bg-color-basic-green;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: relative;
+      flex-shrink: 0;
+      width: 100vw;
+      height: 2px;
+      margin-left: -100vw;
+      background-color: $bg-color-basic-green;
+    }
+  }
+
+  @media (min-width: $desktope-width) {
+    margin-left: -41px;
+  }
+}

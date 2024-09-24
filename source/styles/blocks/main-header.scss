@@ -1,0 +1,30 @@
+.main-header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 56px;
+  font-family: $second-font;
+  padding: 13px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 94px;
+    padding: 25px 34px 65px 30px;
+  }
+
+  @media (min-width: $desktope-width) {
+    padding: 55px 110px 0;
+    margin-bottom: 74px;
+  }
+}
+
+.main-header__container:has(.main-navigation--nojs) {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.main-header__burger {
+  margin-left: 10px;
+}

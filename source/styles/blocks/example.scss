@@ -1,0 +1,182 @@
+.example {
+  position: relative;
+  z-index: 1;
+  padding: 25px 0 40px;
+  background-color: #eaeaea;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      min-height: 462px;
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 101px;
+    background-color: $bg-color-default;
+  }
+
+  @media (min-width: $desktope-width) {
+    position: relative;
+    min-height: 598px;
+    padding-bottom: 74px;
+  }
+}
+
+.example__wrapper-content {
+  position: relative;
+}
+
+.example__title {
+  @include title-typography ($font-size: 36px, $line-height: 40px);
+  margin: 0 0 40px;
+  font-family: $second-font;
+  color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktope-width) {
+    max-width: 900px;
+    margin-bottom: 146px;
+  }
+}
+
+.example__text {
+  margin: 0 0 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktope-width) {
+    max-width: 433px;
+    margin-bottom: 69px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 31px;
+  width: 280px;
+  margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 162px) 1fr;
+    gap: 43px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktope-width) {
+    grid-template-columns: repeat(2, 162px);
+    row-gap: 57px;
+    margin: 0;
+  }
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+  }
+}
+
+.example__name {
+  @include text-typography ($font-size: 24px, $line-height: 24px);
+  font-family: $second-font;
+  min-width: 124px;
+  min-height: 56px;
+  padding: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  color: $text-color-basic;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__description {
+  @include text-typography ($font-size: 12px, $line-height: 12px);
+  position: relative;
+  max-width: 81px;
+  margin: -10px 0 0;
+  background-color: #eaeaea;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    min-width: 142px;
+    background-color: $bg-color-default;
+  }
+
+  @media (min-width: $desktope-width) {
+    background-color: #eaeaea;
+  }
+}
+
+.example__item-total {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    justify-self: end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktope-width) {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-self: start;
+    column-gap: 65px;
+  }
+}
+
+.example__item-total-text {
+  @include text-typography ($font-size: 14px);
+  margin: 0;
+  font-family: $second-font;
+  text-transform: uppercase;
+  color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktope-width) {
+    position: absolute;
+    top: -205px;
+    right: 0;
+  }
+}

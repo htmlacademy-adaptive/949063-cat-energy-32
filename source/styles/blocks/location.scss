@@ -1,0 +1,102 @@
+.location {
+  position: relative;
+}
+
+.location__wrapper-adress {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktope-width) {
+    position: absolute;
+    left: 110px;
+    top: 49%;
+    transform: translateY(-50%);
+    min-width: 565px;
+    min-height: 199px;
+    padding: 60px 78px 60px 80px;
+    background-color: $bg-color-default;
+  }
+}
+
+.location__text {
+  @include text-typography ();
+  max-width: 140px;
+  margin: 0;
+  font-family: $second-font;
+  text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    @include text-typography ($font-size: 20px, $line-height: 26px);
+  }
+}
+
+.location__adress {
+  max-width: 140px;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include text-typography ();
+    max-width: 157px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktope-width) {
+    text-align: inherit;
+  }
+}
+
+.location__adress-street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.location__adress-city {
+  margin: 0;
+}
+
+.location__maps {
+  display: block;
+  width: 100vw;
+  min-height: 362px;
+  background-repeat: no-repeat;
+  background-image:
+    image-set(
+      url("../../images/maps-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/maps-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/maps-mobile@2x.png") 2x,
+      url("../../images/maps-mobile@1x.png") 1x
+    );
+  background-position: center center;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    background-image:
+      image-set(
+        url("../../images/maps-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/maps-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/maps-tablet@2x.png") 2x,
+        url("../../images/maps-tablet@1x.png") 1x
+      );
+  }
+
+  @media (min-width: $desktope-width) {
+    background-image:
+      image-set(
+        url("../../images/maps-desktope@2x.webp") type("image/webp") 2x,
+        url("../../images/maps-desktope@1x.webp") type("image/webp") 1x,
+        url("../../images/maps-desktope@2x.png") 2x,
+        url("../../images/maps-desktope@1x.png") 1x
+      );
+  }
+}
