@@ -13,7 +13,7 @@
 .program__list {
   @include reset-list;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
