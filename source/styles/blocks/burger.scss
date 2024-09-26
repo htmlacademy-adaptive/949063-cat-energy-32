@@ -3,6 +3,7 @@
   flex-shrink: 0;
   border: none;
   padding: 0;
+  margin-left: auto;
   background-color: transparent;
   width: 24px;
   height: 18px;
@@ -45,6 +46,10 @@
     width: 25px;
     transform: rotate(-45deg);
     transition: transform 0.4s 0.1s;
+  }
+
+  &--nojs {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {

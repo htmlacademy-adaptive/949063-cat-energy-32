@@ -3,6 +3,7 @@ const burger = document.querySelector('.burger');
 const mainNavigation = document.querySelector('.main-navigation');
 
 mainNavigation.classList.remove('main-navigation--nojs');
+burger.classList.remove('burger--nojs');
 
 burger.addEventListener('click', () => {
   if (burger.classList.contains('burger--closed')) {
